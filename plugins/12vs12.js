@@ -1,11 +1,5 @@
-const handler = async (m, {conn}) => {
-  m.reply(global.12vs12);
-};
-handler.command = /^(12vs12)$/i;
-export default handler;
-
-global.12vs12 = `
-╭──────⚔──────╮
+let handler = async (m, { conn, command, usedPrefix }) => {
+let txt = `╭──────⚔──────╮
 ㅤㅤ12 𝐕𝐄𝐑𝐒𝐔𝐒 12
 ╰──────⚔──────╯
 ╭──────────────╮
@@ -39,4 +33,15 @@ global.12vs12 = `
 │ㅤʚ 𝐒𝐔𝐏𝐋𝐄𝐍𝐓𝐄:
 │⚜️ ➤ 
 │⚜️ ➤ 
-╰─────────────╯`;
+╰─────────────╯`
+await conn.sendMessage(m.chat, { text: txt,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: 12vs12,
+body: 12vs12,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://telegra.ph/file/a76519a488755d9dd60…
