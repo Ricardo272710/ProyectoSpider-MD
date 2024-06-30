@@ -1,5 +1,7 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let txt = `╭──────⚔──────╮
+let ff = \https://telegra.ph/file/0ea56fa1fba7bdbb619ae.jpg/
+let vs12txt = `
+╭──────⚔──────╮
 ㅤㅤ12 𝐕𝐄𝐑𝐒𝐔𝐒 12
 ╰──────⚔──────╯
 ╭──────────────╮
@@ -33,22 +35,26 @@ let txt = `╭──────⚔──────╮
 │ㅤʚ 𝐒𝐔𝐏𝐋𝐄𝐍𝐓𝐄:
 │⚜️ ➤ 
 │⚜️ ➤ 
-╰─────────────╯`
-await conn.sendMessage(m.chat, { text: txt,
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: false, 
-"externalAdReply": {
-"showAdAttribution": true,
-"containsAutoReply": true,
-title: vs12,
-body: vs12,
-"previewType": "PHOTO",
-thumbnailUrl: 'https://telegra.ph/file/a76519a488755d9dd6097.jpg', 
-sourceUrl: ''}}},
-{ quoted: fkontak})
+╰─────────────╯
+` //Aquí arriba cambiar el texto sin borrar las comillas
+await conn.sendFile(m.chat, 'https://telegra.ph/file/0ea56fa1fba7bdbb619ae.jpg', 'fantasy.jpg', vs12txt.trim(),
+//En esta imagen vas a poner el url de la imagen grande
+ fkontak, true, {
+contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+externalAdReply: {
+showAdAttribution: true,
+renderLargerThumbnail: false,
+title: Free Fire,
+body: vs,
+mediaType: 1,
+sourceUrl: 'https://www.instagram.com/ricardoookadm_',
+thumbnailUrl: 'https://telegra.ph/file/0ea56fa1fba7bdbb619ae.jpg'
+//Aquí arriba vas a poner el url de la imagen que irá junto a tu link de tu red social.
+}}
+}, { mentions: m.sender })
+
 }
-handler.tags =['info'] 
-handler.help = ['codesandbox', 'Servidor', 'Obte'] 
-handler.command = /^(sandbox|12vs12|vs12|sand|server)$/i
+handler.command = /^(vs12|12vs12)$/i
 export default handler
