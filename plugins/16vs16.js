@@ -1,11 +1,12 @@
-const handler = async (m, {conn}) => {
-  m.reply(global.16vs16);
+cconst handler = async (m, {conn}) => {
+  m.reply(global.Vs16);
 };
-handler.command = /^(16vs16)$/i;
+handler.command = /^(Vs16)$/i;
 export default handler;
+handler.group = true
+handler.botAdmin = true
 
-global.16vs16 = `
-
+global.Vs16 = `
 ╭──────⚔──────╮
 ㅤㅤ16 𝐕𝐄𝐑𝐒𝐔𝐒 16
 ╰──────⚔──────╯

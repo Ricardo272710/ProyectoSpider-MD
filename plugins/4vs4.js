@@ -1,10 +1,12 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.4vs4);
+  m.reply(global.Vs4);
 };
-handler.command = /^(4vs4)$/i;
+handler.command = /^(Vs4)$/i;
 export default handler;
+handler.group = true
+handler.botAdmin = true
 
-global.4vs4 = `
+global.Vs4 = `
 ╭──────⚔──────╮
 ㅤㅤㅤ4 𝐕𝐄𝐑𝐒𝐔𝐒 4
 ╰──────⚔──────╯

@@ -1,10 +1,12 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.8vs8);
+  m.reply(global.Vs8);
 };
-handler.command = /^(8vs8)$/i;
+handler.command = /^(Vs8)$/i;
 export default handler;
+handler.group = true
+handler.botAdmin = true
 
-global.8vs8 = `
+global.Vs8 = `
 ╭──────⚔──────╮
 ㅤㅤ8 𝐕𝐄𝐑𝐒𝐔𝐒 8
 ╰──────⚔──────╯

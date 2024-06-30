@@ -1,10 +1,12 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.6vs6);
+  m.reply(global.Vs6);
 };
-handler.command = /^(6vs6)$/i;
+handler.command = /^(Vs6)$/i;
 export default handler;
+handler.group = true
+handler.botAdmin = true
 
-global.6vs6 = `
+global.Vs6 = `
 ╭──────⚔──────╮
 ㅤㅤㅤ6 𝐕𝐄𝐑𝐒𝐔𝐒 6
 ╰──────⚔──────╯
