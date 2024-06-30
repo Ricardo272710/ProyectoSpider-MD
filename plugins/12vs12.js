@@ -34,7 +34,7 @@ let vs12txt = `╭──────⚔──────╮
 │⚜️ ➤ 
 │⚜️ ➤ 
 ╰─────────────╯`
-await conn.sendMessage(m.chat, { vs12text: vs12txt,
+await conn.sendMessage(m.chat, { text: txt,
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: false, 
