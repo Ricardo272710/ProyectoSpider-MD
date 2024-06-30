@@ -12,7 +12,7 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   const oi = `${pesan}`;
   let teks = `𝙋𝙍𝙊𝙔𝙀𝘾𝙏 𝙍.𝘼 🕷️\n\n❏ 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒  :  *${participants.length}* ${oi}\n\n`;
   for (const mem of participants) {
-    teks += `🎀 @${mem.id.split('@')[0]}\n`;
+    teks += `😤 @${mem.id.split('@')[0]}\n`;
   }
   teks += `\n𝐀𝐍𝐎𝐓𝐀𝐓𝐄 𝐏𝐋𝐀𝐍𝐓𝐈𝐓𝐀 ღ`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
