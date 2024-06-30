@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let vs12txt = `╭──────⚔──────╮
+let txt = `╭──────⚔──────╮
 ㅤㅤ12 𝐕𝐄𝐑𝐒𝐔𝐒 12
 ╰──────⚔──────╯
 ╭──────────────╮
